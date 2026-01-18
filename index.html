@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>ASSIGNMENT 02</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
-    
+    <nav class="flex place-content-between container mx-auto px-12 items-center bg-[#1A0B2E] text-[#FFFFFF]">
+            <h2 class="content-center text-5xl font-[800]">Techs<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h2>
+            <ul class="flex gap-x-[50px] pt-[36.5px] pb-[36.5px] content-center">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+            <button class="hidden lg:flex items-center gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px]">Subscribe<img src="./images/arrow-right.png" alt="" ></button>
+            <ul class=" gap-x-[50px] hidden ">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+        <i class=" hidden"><img src="./images/hamburger-menu.png" alt=""></i>
+    </nav>
 </body>
 </html>
