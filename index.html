@@ -14,13 +14,13 @@
     
         <div class="container mx-auto flex justify-between items-center px-4 lg:px-12 py-4">
     
-            <h2 class="content-center text-2xl lg:text-5xl font-[800] ">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h2>
+            <h2 class="content-center text-2xl lg:text-5xl font-[800] ">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Wave</span></h2>
             <ul class="flex  font-[500] gap-x-[42px] pt-[36.5px] pb-[36.5px] content-center hidden  lg:flex">
-                <li>About</li>
-                <li>Episodes</li>
-                <li>Host</li>
+                <li class="cursor-pointer hover:text-[#00FF88] transition-colors ">About</li>
+                <li class="cursor-pointer hover:text-[#00FF88] transition-colors">Episodes</li>
+                <li class="cursor-pointer hover:text-[#00FF88] transition-colors">Host</li>
             </ul>
-            <button class="hidden lg:flex font-[600] items-center gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px]">Subscribe<img src="./images/arrow-right.png" alt="" ></button>
+            <button class="hidden lg:flex font-[600] items-center gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px]  border border-transparent hover:bg-none hover:transparent hover:border-[#00FF88] hover:text-[#00FF88]">Subscribe<img src="./images/arrow-right.png" alt="" ></button>
            <i class="  block lg:hidden"><img src="./images/hamburger-menu.png" alt="" class="w-[24px]"></i>
           </div> 
     </nav>
@@ -34,14 +34,14 @@
                 <div class="relative w-[200px] lg:w-[350px]">
                     <img src="./images/hero-circle.png" alt="" class="w-full">
                     <img src="./images/microphone.png" alt=""  class="absolute inset-0 m-auto w-[60px] lg:w-[100px]">
-                    <span class="absolute top-0 right-0  text-[#1A0B2E] bg-[#00FF88] rounded-[80px] px-[16px] py-[8px]">NEW</span>
+                    <span class="absolute top-0 right-0  text-[#1A0B2E] bg-[#00FF88] rounded-[80px] px-[16px] py-[8px] animate-pulse">NEW</span>
                 </div>
                <h1 class="text-[40px] lg:text-[60px] font-[800] mt-[40px]">TechWave</h1>
                <p class="pt-[10px] pb-5 font-[200]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                
                
                 <div class="flex justify-center items-center gap-4 w-full px-4">
-                     <button class="flex items-center gap-2 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full py-3 px-4 text-white font-bold text-sm lg:text-base border-0">
+                     <button class="flex items-center gap-2 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full py-3 px-4 text-white font-bold text-sm lg:text-base border border-transparent hover:bg-none hover:bg-transparent hover:border-[#00FF88] hover:text-[#00FF88]">
                         <img src="./images/spotify.png" alt="" class="w-5"> Listen on Spotify
                     </button>
     
@@ -81,27 +81,27 @@
         <section class="bg-[#230E3D] ">
             <h2 class="items-center text-center text-[32px] lg:text-[48px] font-[700] text-[#FFFFFF] pt-[40px] lg:pt-[120px] pb-[16px] lg:pb-[40px]">Why Choose TechWave</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-5 lg:px-[200px] shadow-[#351165] pb-[40px] lg:pb-[120px]">
-                <div class="bg-[#351165] col-span-1 lg:row-span-2 px-[20px] lg:px-[40px] py-[40px] lg:py-[100px] rounded-[20px] items-center">
+                <div class="bg-[#351165] col-span-1 lg:row-span-2 px-[20px] lg:px-[40px] py-[40px] lg:py-[100px] rounded-[20px] items-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border hover:border-[#c19cef]">
                     <i><img src="./images/headphone.png" alt="" class="max-w-[60px]"></i>
                     <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-4">Premium Audio Quality</h3>
                     <p class="text-[#FFFFFF] font-[200]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                 </div>
-                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] items-center px-[20px] lg:px-[40px] py-[40px] lg:py-[40px]">
+                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] items-center px-[20px] lg:px-[40px] py-[40px] lg:py-[40px] cursor-pointer transition-all duration-300 hover:scale-105 hover:border hover:border-[#c19cef]">
                     <i><img src="./images/device.png" alt="" class="max-w-[60px]"></i>
                     <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-4">Mobile Friendly</h3>
                     <p class="text-[#FFFFFF] font-[200]">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
-                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px]">
+                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px] cursor-pointer transition-all duration-300 hover:scale-105 hover:border hover:border-[#c19cef]">
                     <i><img src="./images/location.png" alt="" class="max-w-[60px]"></i>
                     <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-4">Global Community</h3>
                     <p class="text-[#FFFFFF] font-[200]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
                 </div>
-                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px]">
+                <div class="bg-[#351165] col-span-1 lg:col-span-2 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px] cursor-pointer transition-all duration-300 hover:scale-105 hover:border hover:border-[#c19cef]">
                     <i><img src="./images/exclusive.png" alt="" class="max-w-[60px]"></i>
                     <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-4">Exclusive Interviews</h3>
                     <p class="text-[#FFFFFF] font-[200]">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                 </div>
-                <div class="bg-[#351165] col-span-1 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px]">
+                <div class="bg-[#351165] col-span-1 rounded-[20px] px-[20px] lg:px-[40px] py-[40px] lg:py-[40px] cursor-pointer transition-all duration-300 hover:scale-105 hover:border hover:border-[#c19cef]">
                     <i><img src="./images/resource.png" alt="" class="max-w-[60px]"></i>
                     <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-4">Rich Resources</h3>
                     <p class="text-[#FFFFFF] font-[200]">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -161,27 +161,27 @@
                     <div class="p-10 w-full" >
                         <img src="./images/host.png" alt="">
                     </div>
-                    <div>
-                    
-                    <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-10 ">Alex Kumar</h3>
-                    <p class="text-[#FAFAFA] font-[300] pt-4 pr-10">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                    <ul class="flex gap-[8px] pt-4 pb-4 lg:pb-[48.5px]">
-                        <li><img src="./images/linkedin.png" alt="" class="w-6"></li>
-                        <li><img src="./images/x.png" alt="" class="w-6"></li>
-                        <li><img src="./images/instagram.png" alt="" class="w-6"></li>
-                        <li><img src="./images/youtube.png" alt="" class="w-6"></li>
-                    </ul>
+
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-[22px] lg:text-[24px] font-[700] text-[#FFFFFF] pt-10 ">Alex Kumar</h3>
+                        <p class="text-[#FAFAFA] font-[300] pt-4 lg:pr-10">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <ul class="flex gap-[8px] pt-4 pb-4 lg:pb-[48.5px]">
+                            <li><img src="./images/linkedin.png" alt="" class="w-6"></li>
+                            <li><img src="./images/x.png" alt="" class="w-6"></li>
+                            <li><img src="./images/instagram.png" alt="" class="w-6"></li>
+                            <li><img src="./images/youtube.png" alt="" class="w-6"></li>
+                        </ul>
                     </div>
         </section>
     </main>
     <!-- Footer section  -->
         <footer>
-            <div class="bg-[url(./images/footer-bg.png)] bg-cover bg-center bg-no-repeat text-[#FFFFFF] flex flex-col items-center text-center gap-6 py-20 px-4 lg:px-20">
-                <h2 class="content-center text-2xl lg:text-5xl font-[800] m-auto">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h2>
+            <div class="w-full bg-[url(./images/footer-bg.png)] bg-cover bg-center bg-no-repeat text-[#FFFFFF] flex flex-col items-center text-center gap-6 py-20 px-4 lg:px-20">
+                <h2 class="content-center text-2xl lg:text-5xl font-[800] m-auto">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Wave</span></h2>
                 <ul class="flex items-center gap-6 flex-wrap justify-center font-bold text-sm lg:text-base">
                     <li class="flex items-center gap-2 cursor-pointer hover:text-[#00FF88] transition-colors"><img src="./images/spotify.png" alt="" class="w-5"> Spotify</li>
                     <li class="flex items-center gap-2 cursor-pointer hover:text-[#00FF88] transition-colors"><img src="./images/apple-podcast.png" alt="" class="w-5"> Apple Podcast</li>
-                    <li class="flex items-center gap-2 cursor-pointer hover:text-[#00FF88] transition-colors"><img src="./images/youtube.png" alt="" class="w-5"> Youtube</li>
+                    <li class="flex items-center gap-2 cursor-pointer hover:text-[#00FF88] transition-colors"><img src="./images/youtube-podcast.png" alt="" class="w-5"> Youtube</li>
                     <li class="flex items-center gap-2 cursor-pointer hover:text-[#00FF88] transition-colors"><img src="./images/twitter.png" alt="" class="w-5"> Twitter</li>
                 </ul>
                     <p class="m-auto text-[#FAFAFA] font-[300] pt-4 ">© 2026 TechWave Podcast. All rights reserved.</p>
