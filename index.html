@@ -6,37 +6,39 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>ASSIGNMENT 02</title>
     <link rel="stylesheet" href="./styles/style.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
 </head>
 <body>
-    <nav class="flex place-content-between container mx-auto px-12 items-center bg-[#1A0B2E] text-[#FFFFFF]">
-            <h2 class="content-center text-5xl font-[800]">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h2>
+    <!-- Navbar section -->
+    <nav class="flex justify-between container mx-auto px-4 lg:px-12 items-center bg-[#1A0B2E] text-[#FFFFFF]">
+            <h2 class="content-center text-3xl lg:text-5xl font-[800] ">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h2>
             <ul class="flex  font-[500] gap-x-[42px] pt-[36.5px] pb-[36.5px] content-center hidden  lg:flex">
                 <li>About</li>
                 <li>Episodes</li>
                 <li>Host</li>
             </ul>
             <button class="hidden lg:flex font-[600] items-center gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px]">Subscribe<img src="./images/arrow-right.png" alt="" ></button>
-        <i class="  block lg:hidden"><img src="./images/hamburger-menu.png" alt=""></i>
+           <i class="  block lg:hidden"><img src="./images/hamburger-menu.png" alt=""></i>
     </nav>
 
-    <header class="sm:[440px] ">
-        <div class="relative  ">
-            <img src="./images/hero-bg.png" alt="" class="w-full">
-            <div class="">
-                <img src="./images/hero-circle.png" alt="" class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:max-w-[200px] lg:max-w-[350px]">
-                <img src="./images/microphone.png" alt=""  class="absolute top-1/9 left-1/2 -translate-x-1/2 translate-y-1/4 sm:max-w-[80px] lg:max-w-[200px]">
-                <span class="absolute top-1/2 right-0  -translate-x-3/6 -translate-y-1/4 bg-[#00FF88] rounded-[50px] px-[16px] py-[8px]">NEW</span>
-            
-            </div>
-        </div>
-        <div class="">
-            <h1 class=""></h1>
-            <p class=""></p>
-        </div>
+    <!-- Hero section -->
 
+    <header class="relative  ">
+            <img src="./images/hero-bg.png" alt="" class="absolute inset-0 h-full w-full  object-cover -z-10">
+
+            <div class="relative z-10 flex flex-col justify-center items-center text-center pt-10 text-[#FFFFFF]">
+                <div class="relative w-[200px] lg:w-[300px]">
+                    <img src="./images/hero-circle.png" alt="" class="w-full">
+                    <img src="./images/microphone.png" alt=""  class="absolute inset-0 m-auto w-[60px] lg:w-[100px]">
+                    <span class="absolute top-0 right-0  text-[#1A0B2E] bg-[#00FF88] rounded-[80px] px-[16px] py-[8px]">NEW</span>
+                </div>
+               <h1 class="text-[40px] lg:text-[60px] font-[800] mt-[40px]">TechWave</h1>
+               <p class="pi-[10px] pb-5">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+
+            <!-- absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px]  lg:w-[350px]
+            absolute top-[12%] left-1/2 -translate-x-1/2 translate-y-1/4 w-[] lg:w-[] -->
+       
     </header>
 </body>
 </html>
