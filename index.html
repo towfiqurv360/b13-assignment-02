@@ -9,7 +9,8 @@
     
 </head>
 <body>
-    <!-- Navbar section -->
+                            <!-- Navbar section -->
+
     <nav class="flex justify-between container mx-auto px-4 lg:px-12 items-center bg-[#1A0B2E] text-[#FFFFFF]">
             <h2 class="content-center text-3xl lg:text-5xl font-[800] ">Tech<span class="bg-gradient-to-r from-fuchsia-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h2>
             <ul class="flex  font-[500] gap-x-[42px] pt-[36.5px] pb-[36.5px] content-center hidden  lg:flex">
@@ -21,24 +22,53 @@
            <i class="  block lg:hidden"><img src="./images/hamburger-menu.png" alt=""></i>
     </nav>
 
-    <!-- Hero section -->
+                            <!-- Hero section -->
 
     <header class="relative  ">
             <img src="./images/hero-bg.png" alt="" class="absolute inset-0 h-full w-full  object-cover -z-10">
 
-            <div class="relative z-10 flex flex-col justify-center items-center text-center pt-10 text-[#FFFFFF]">
+            <div class="relative z-10 flex flex-col justify-center items-center text-center pt-10 text-[#FFFFFF] pb-[100px]">
                 <div class="relative w-[200px] lg:w-[300px]">
                     <img src="./images/hero-circle.png" alt="" class="w-full">
                     <img src="./images/microphone.png" alt=""  class="absolute inset-0 m-auto w-[60px] lg:w-[100px]">
                     <span class="absolute top-0 right-0  text-[#1A0B2E] bg-[#00FF88] rounded-[80px] px-[16px] py-[8px]">NEW</span>
                 </div>
                <h1 class="text-[40px] lg:text-[60px] font-[800] mt-[40px]">TechWave</h1>
-               <p class="pi-[10px] pb-5">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+               <p class="pi-[10px] pb-5 font-[200]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+               <span class="flex justify-between gap-8">
+                <button class="lg:flex font-4xl lg:font-[600] items-center lg:gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px] border-0"><i><img src="./images/spotify.png" alt=""></i>Listen on Spotify</button>
+                <button class="lg:flex font-[600] items-center gap-[3px] rounded-[50px] py-[12px] px-[16px] bg-transprent border-[1px] border-[#00FF88] text-[#00FF88]"><i><img src="./images/message.png" alt=""></i>Subscribe</button>
+               </span>
             </div>
-
-            <!-- absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px]  lg:w-[350px]
-            absolute top-[12%] left-1/2 -translate-x-1/2 translate-y-1/4 w-[] lg:w-[] -->
-       
     </header>
+                            <!-- Main section start-->
+     <main>
+
+                                <!-- Podcast section-->
+                                 
+         <div class="flex flex-col items-center m-auto bg-[#1A0B2E] text-[#FFFFFF] text-center px-[20px] lg:px-[200px]">
+            <h1 class="text-[48px] text-[700] py-[50px]">About the Podcast</h1>
+            <p class="font-[200] pb-20 border-b-[1px] border-[#FFFFFF]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+We break down complex topics into digestible insights, explore productivity strategies that actually work,
+and share stories of personal growth from industry leaders. <br><br>
+Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+         </div>
+
+         <div class="flex justify-between text-center text-[48px] px-50 pt-20 bg-[#1A0B2E] pb-30">
+            <h3 class="text-[#00FF88]">150K+
+            <p class="text-[16px] text-[#FFFFFF] font-[200]">Monthly Listeners</p>
+         </h3>
+         <h3 class="text-[#00FF88]">200+
+            <p class="text-[16px] text-[#FFFFFF] font-[200]">Episodes Published</p>
+         </h3>
+         <h3 class="text-[#00FF88]">4.9★
+            <p class="text-[16px] text-[#FFFFFF] font-[200]">Average Rating</p>
+         </h3>
+         <h3 class="text-[#00FF88]">50+
+            <p class="text-[16px] text-[#FFFFFF] font-[200]">Industry Experts</p>
+         </h3>
+         </div>
+
+     </main>
 </body>
 </html>
