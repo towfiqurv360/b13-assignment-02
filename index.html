@@ -10,7 +10,8 @@
 </head>
 <body>
                             <!-- Navbar section -->
-    <nav class="w-full bg-[#1A0B2E] text-[#FFFFFF]">
+    <nav class="w-full bg-[#1A0B2E] text-[#FFFFFF] relative z-50">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
     
         <div class="container mx-auto flex justify-between items-center px-4 lg:px-12 py-4">
     
@@ -21,8 +22,21 @@
                 <li class="cursor-pointer hover:text-[#00FF88] transition-colors">Host</li>
             </ul>
             <button class="hidden lg:flex font-[600] items-center gap-[3px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[50px] py-[12px] px-[16px]  border border-transparent hover:bg-none hover:transparent hover:border-[#00FF88] hover:text-[#00FF88]">Subscribe<img src="./images/arrow-right.png" alt="" ></button>
-           <i class="  block lg:hidden"><img src="./images/hamburger-menu.png" alt="" class="w-[24px]"></i>
-          </div> 
+          
+            <label for="menu-toggle" class="block lg:hidden cursor-pointer p-2">
+                <img src="./images/hamburger-menu.png" alt="" class="w-[24px]">
+         </label>
+        </div> 
+          
+         <div class="hidden peer-checked:flex flex-col items-center gap-6 bg-[#1A0B2E] w-full absolute top-full left-0 p-8 border-t border-purple-900 shadow-2xl lg:hidden transition-all duration-500">
+    <a href="#" class="cursor-pointer hover:text-[#00FF88] font-bold">About</a>
+    <a href="#" class="cursor-pointer hover:text-[#00FF88] font-bold">Episodes</a>
+    <a href="#" class="cursor-pointer hover:text-[#00FF88] font-bold">Host</a>
+    
+    <button class="flex font-[600] items-center gap-2 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full py-2 px-6">
+        Subscribe <img src="./images/arrow-right.png" alt="">
+    </button>
+</div>
     </nav>
 
                             <!-- Hero section -->
