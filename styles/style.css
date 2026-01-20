@@ -21,10 +21,31 @@
   animation: gradientFlow 3s linear infinite;
 }
 
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 8px solid #00FF88;
+  letter-spacing: 0.10em;
+  margin: 0 auto;
+  animation: typing 8s steps(19) infinite , blink-caret .75s step-end infinite;
+  
+}
+
 @keyframes gradientFlow {
   0% { background-position: 0% 50%;}
   50% { background-position: 100% 50%;}
   100% { background-position: 200% 50%;}
 }
 
+@keyframes typing {
+  0%{width: 0;}
+  40%{width: 20ch;}
+  80%{width:20ch;}
+  90%{width: 0;}
+  100%{width: 0;}
+}
+@keyframes blink-caret{
+  from,to {border-color: transparent;}
+  50%{border-color: #00FF88;}
+}
 
